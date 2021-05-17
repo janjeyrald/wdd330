@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="index for WDD330 Class" content="Contains my reading assignment notes, and WDD assignments links."/>
+
+  <title>WDD 300 Portfolio</title>
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+</head>
+
+<body>
+  <h1>-Week 02 - WDD 330 portfolio</h1>
+  <h2>Week 2 notes/exercises</h2>
+  <section>
+      <h3>String Properties and Methods</h3>
+        
+      <div>const name = 'Alexa'; // declare and assign a variable << 'Alexa'<br><br>
+        name.length; // retrieve the name variable’s length property << 5<br><br>
+        Can also be written as<br><br>
+        name['length']; // note the property name is in quote marks << 5<br><br>
+        For example, we can write a string in all capital letters using the toUpperCase() method:<br><br>
+            name.toUpperCase(); << 'ALEXA'<br>
+            <br>
+            If you want to know which character is at a certain position, you can use the charAt() method:
+name.charAt(1); << 'l'<br><br>
+ (you’ll find that counting usually starts at zero in programming!). <br><br>
+
+If you want to find where a certain character or substring appears in a string, we can use the indexOf() method: name.indexOf('A'); << 0<br><br>
+
+If a character doesn’t appear in the string, -1 will be returned: because there is no "z" in Alexa<br><br>
+name.indexOf('z'); << -1 <br><br>
+
+If we want the last occurrence of a character or substring, we can use the lastIndexOf() method:<br><br>
+name.lastIndexOf('a'); << 4<br><br>
+
+If all we want to know if a string contains a certain character, then ES2016 provides the useful includes() method:<br><br>
+
+name.includes('a'); << true <br><br>
+name.includes('z'); << false <br><br>
+
+To check if a string starts with a certain character, we can use the startsWith() method. Be careful though, it’s case-sensitive:<br><br>
+name.startsWith('A'); << true <br><br>
+name.startsWith('a'); << false<br><br>
+
+And we can use the similar endsWith() method to check if a string ends with a particular character:<br><br>
+name.endsWith('A'); << false <br><br>
+name.endsWith('a'); << true <br><br>
+
+The concat() method can be used to concatenate two or more strings together: 'JavaScript'.concat('Ninja'); << 'JavaScriptNinja' <br><br>
+'Hello'.concat(' ','World','!'); << 'Hello World!'<br><br>
+
+A shortcut for string concatenation is to use the + operator to add the two strings together:<br><br>
+ 'Java' + 'Script' + ' ' + 'Ninja'; << 'JavaScript Ninja' <br><br>
+
+The trim() method will remove any whitespace from the beginning and end of a string: <br><br>
+' Hello World '.trim(); // the space in the middle will be preserved << 'Hello World'<br><br>
+ ' \t\t JavaScript Ninja! \r'.trim(); // escaped tabs and carriage returns are also removed << 'JavaScript Ninja!' <br><br>
+
+ES6 also introduced the repeat() method that will repeat a string the stated number of times:<br><br>
+'Hello'.repeat(2); << 'HelloHello' <br><br>
+NaN is an error value that is short for "Not a Number". It is used when an
+operation is attempted and the result isn’t numerical, like if you try to multiply a
+string by a number, for example:<br><br>
+
+'hello' * 5;<br><br>
+<< NaN<br><br>
+
+//Boolean<br><br>
+
+Hard Equality<br><br>
+The hard, or strict, equality operator, ===, tests for equality but only returns true<br><br>
+if and only if they are of the same data type:
+<br><br>
+      </div>
+    </section>
+
+    <h3>Arrays</h3>
+    <section>
+        <div>
+            Pop, Push, Shift, and Unshift
+
+To remove the last item from an array, we can use the pop() method: <br><br>
+avengers.pop(); << 'Thor'<br><br>
+
+The shift() method works in a similar way to the pop() method, but this<br><br>
+removes the first item in the array:<br><br>
+
+avengers.shift();<br><br>
+<< 'Captain America'<br><br>
+
+The push() method appends a new value to the end of the array<br><br>
+avengers.push('Thor'); << 2 <br><br>
+
+The unshift() method is similar to the push() method, but this appends a new item to the beginning of the array:<br><br>
+
+ avengers.unshift('Captain America'); << 3<br><br>
+
+        </div>
+    </section>
+
+
+      
+<script src="js/main.js"></script>
+</body>
+
+</html>
